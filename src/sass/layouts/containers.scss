@@ -1,0 +1,65 @@
+.section-container {
+  margin-top: -1px;
+  padding: $mobile-gutter;
+
+  > div {
+    display: grid !important;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 980px);
+  }
+}
+
+.lesser-section-container {
+  margin-top: -1px;
+  padding: $lesser-mobile-gutter;
+
+  > div {
+    display: grid !important;
+    justify-content: center;
+    grid-template-columns: minmax(auto, 980px);
+  }
+}
+
+.modal-section-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  overflow: scroll;
+  z-index: 10;
+
+  &[data-state="active"] {
+    display: block;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .section-container {
+    padding: $tablet-gutter;
+  }
+
+  .lesser-section-container {
+    padding: $lesser-tablet-gutter;
+  }
+
+  .container-slanted-top {
+    clip-path: polygon(0 5%, 0 100%, 100% 100%, 100% 0);
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .section-container {
+    padding: $desktop-gutter;
+  }
+
+  .lesser-section-container {
+    padding: $lesser-desktop-gutter;
+  }
+
+  .container-slanted-top {
+    clip-path: polygon(0 8%, 0 100%, 100% 100%, 100% 0);
+  }
+}

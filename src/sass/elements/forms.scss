@@ -1,0 +1,68 @@
+.hs-form {
+  width: 100%;
+
+  .hs-form-field {
+    margin: 1rem 0;
+  }
+
+  .form-columns-1 .hs-input {
+    width: 100% !important;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    margin: .5rem 0 0;
+    border: 1px solid $gray200;
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $primary500;
+    }
+
+    &.error {
+      border-color: $error500;
+    }
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="email"] {
+    padding: .5rem 1rem;
+    border-radius: 25px;
+  }
+
+  textarea {
+    border-radius: 5px;
+    resize: vertical;
+  }
+
+  .hs_submit {
+    width: 100%;
+
+    .actions {
+      text-align: center;
+    }
+  }
+
+  input[type="submit"] {
+    @extend %button;
+  }
+
+  .hs-error-msgs {
+    margin: .5rem 0 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hs-error-msgs label{
+    color: $error500;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,54 @@
+$head-font: "Roboto Slab", serif;
+$base-font: "Open Sans", sans-serif;
+
+body {
+  font-family: $base-font, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-family: $head-font, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 1.3;
+}
+
+h2 {
+  margin: .5rem 0 1.5rem;
+  font-family: $base-font, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+a {
+  color: $primary500;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary300;
+  }
+}
+
+.section-container {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.lesser-section-container {
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+.modal-close-button {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.modal-form {
+  max-width: 500px;
+  margin: 6rem auto;
+
+  &[data-state="inactive"] {
+    display: none;
+  }
+}

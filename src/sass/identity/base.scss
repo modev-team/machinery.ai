@@ -1,0 +1,54 @@
+$gutter: 1rem;
+$lesser-section-gutter: $gutter;
+$mobile-gutter: 2rem 1.5rem;
+$tablet-gutter: 4rem 3rem;
+$desktop-gutter: 6rem 3rem;
+
+$lesser-mobile-gutter: 1rem 1.5rem;
+$lesser-tablet-gutter: 2rem 3rem;
+$lesser-desktop-gutter: 3rem 3rem;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+body {
+  &[data-state="inactive"] {
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.page-center {
+  max-width: 960px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.center {
+  text-align: center;
+}
+
+//Hubspot Specific
+.widget-type-raw_jinja {
+  min-height: 0 !important;
+}
+
+.widget-type-raw_html {
+  min-height: 0 !important;
+}
+
+@media all and (min-width: 37.5rem) {
+  [data-device="mobile"] {
+    display: none !important;
+  }
+}
