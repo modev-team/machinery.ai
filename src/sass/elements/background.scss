@@ -1,9 +1,36 @@
 .medium-background {
-  background-color: $background600;
+  background-color: $secondary400;
   color: $white;
+
+  .button {
+    background-color: $accent-blue400;
+
+    &:hover {
+      background-color: $accent-blue400;
+    }
+  }
+}
+
+.image-background {
+  background-color: $primary400;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .dark-background {
   background-color: $background800;
-  color: $white;
+}
+
+.image-background,
+.medium-background,
+.dark-background {
+  h1,
+  h2 {
+    color: $white;
+  }
+}
+
+.section-opacity {
+  background-color: rgba($primary400, .7);
 }

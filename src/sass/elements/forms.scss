@@ -1,12 +1,18 @@
 .hs-form {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 1.5rem;
 
   .hs-form-field {
     margin: 1rem 0;
   }
 
-  .form-columns-1 .hs-input {
+  .form-columns-1 .hs-input,
+  .form-columns-2 .hs-input {
     width: 100% !important;
+  }
+
+  .input {
+    margin-right: 0 !important;
   }
 
   input[type="text"],
@@ -18,11 +24,11 @@
   select {
     width: 100%;
     margin: .5rem 0 0;
-    border: 1px solid $gray200;
+    border: 1px solid $accent-gray200;
 
     &:focus {
       outline: 0;
-      border: 1px solid $primary500;
+      border: 1px solid $accent-green400;
     }
 
     &.error {
@@ -39,6 +45,7 @@
   }
 
   textarea {
+    padding: .5rem 1rem;
     border-radius: 5px;
     resize: vertical;
   }
@@ -64,5 +71,13 @@
   .hs-error-msgs label{
     color: $error500;
     font-size: 14px;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .hs-form {
+    .input {
+      margin-right: 8px !important;
+    }
   }
 }

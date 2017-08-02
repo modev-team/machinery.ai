@@ -1,15 +1,18 @@
 .speaker-container {
   position: relative;
   width: 100%;
-  max-width: 200px;
-  margin: 1rem;
+  height: 0;
+  padding-bottom: 100%;
+  border: 0;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .speaker-opacity {
   position: absolute;
-  width: 100%;
+  right: -1px;
+  left: -1px;
+  width: 102%;
   height: 100%;
   padding: 1rem;
   background-color: $black;
@@ -22,5 +25,5 @@
 }
 
 .speaker-name {
-  color: $primary500;
+  color: $primary400;
 }

@@ -1,13 +1,64 @@
-  .speakers-container {
-    span {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: flex-start;
-      justify-content: center;
-      margin-top: 1rem;
+.speakers-container {
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+
+    > div {
+      width: 40%;
+      margin: .5rem;
+    }
+
+    @supports(display: grid) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 1rem;
 
       > div {
-        margin: 1rem;
+        width: 100%;
+        margin: .5rem 0;
       }
     }
   }
+}
+
+@media all and (min-width: 37.5rem) {
+  .speakers-container {
+    span {
+      > div {
+        width: 26%;
+        margin: 1rem;
+      }
+
+      @supports(display: grid) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+
+        > div {
+          width: 100%;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .speakers-container {
+    span {
+      > div {
+        width: 20%;
+      }
+
+      @supports(display: grid) {
+        grid-template-columns: repeat(4, 1fr);
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

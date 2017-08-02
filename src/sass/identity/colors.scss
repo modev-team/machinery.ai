@@ -1,19 +1,30 @@
 $black: #000;
 $white: #fff;
 
-$primary200: #c0fb71;
-$primary300: #a7e94f;
-$primary400: #95db38;
-$primary500: #8bc53e;
+$primary300: #5ca6a1;
+$primary400: #46827e;
+$secondary200: #90336b;
+$secondary300: #4d0731;
+$secondary400: #32021f;
+
+$accent-gray200: #bdbdd1;
+$accent-gray300: #8f8f9f;
+$accent-gray400: #575761;
+$accent-gray800: #0f0f11;
+
+$accent-blue300: #4b93cc;
+$accent-blue400: #3f7cac;
+
+$accent-green300: #bae5e1;
+$accent-green400: #a6d8d4;
+$accent-green500: #7acbc4;
 
 $error500: #f6472f;
 
-$gray200: #e9e9e9;
-$gray400: #d2d2d2;
-
 $background400: #3b3741;
-$background600: #211f25;
-$background800: #141217;
+$background600: #210114;
+$background800: $accent-gray400;
 
-$body-color: $black;
-$header-color: $black;
+$type: $accent-gray300;
+$type-bold: $accent-gray800;
+$header: $accent-gray800;

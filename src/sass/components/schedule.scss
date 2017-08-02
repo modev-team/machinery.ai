@@ -1,0 +1,156 @@
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.schedule-day {
+  display: flex;
+  flex: 1 100%;
+  flex-wrap: wrap;
+}
+
+.schedule-header-date {
+  flex: 1 100%;
+  margin-top: 1.5rem;
+  color: $black;
+  text-align: center;
+}
+
+.schedule-track {
+  display: flex;
+  flex: 1 100%;
+
+  &:nth-child(odd) {
+    .schedule-time {
+      background-color: $accent-green300;
+    }
+
+    .schedule-title {
+      background-color: $accent-gray400;
+    }
+  }
+
+  &:nth-child(even) {
+    .schedule-time {
+      background-color: $accent-green400;
+    }
+
+    .schedule-title {
+      background-color: $accent-gray800;
+    }
+  }
+}
+
+.schedule-time {
+  display: flex;
+  flex: 1 65px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  color: $black;
+  font-family: $head-font;
+}
+
+.schedule-title {
+  flex: 1 60%;
+  padding: 1rem;
+  color: $white;
+}
+
+@media all and (min-width: 37.5rem) {
+  .schedule-day {
+    flex: 1;
+
+    &:first-child {
+      margin-right: .5rem;
+    }
+
+    &:last-child {
+      margin-left: .5rem;
+    }
+  }
+
+  .schedule-track {
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+
+    &:nth-child(odd) {
+      background-color: $accent-gray400;
+
+      .schedule-time {
+        background-color: transparent;
+      }
+    }
+
+    &:nth-child(even) {
+      background-color: $accent-gray800;
+
+      .schedule-time {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .schedule-time {
+    flex: 1 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: .25rem;
+    padding-right: 0;
+    color: $accent-green400;
+    font-size: 18px;
+  }
+
+  .schedule-title {
+    flex: 1 100%;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .schedule-day {
+    &:first-child {
+      margin-right: 1rem;
+    }
+
+    &:last-child {
+      margin-left: 1rem;
+    }
+  }
+
+  .schedule-track {
+    flex-wrap: nowrap;
+    padding: 0;
+
+    &:nth-child(odd) {
+      .schedule-time {
+        background-color: $accent-green300;
+      }
+    }
+
+    &:nth-child(even) {
+      .schedule-time {
+        background-color: $accent-green400;
+      }
+    }
+  }
+
+  .schedule-time {
+    display: flex;
+    flex: 1 70px;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    color: $black;
+    font-size: inherit;
+  }
+
+  .schedule-title {
+    flex: 1 70%;
+    padding: 1rem;
+  }
+}
